@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Azonix' ;
+  src: url('./components/Azonix.otf');
+}
+#root{
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+  font-family: 'Azonix' ;
+  overflow-x: hidden;
+  a{
+    text-decoration: none;
+  }
+}
+
