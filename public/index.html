@@ -33,9 +33,8 @@
         align-items: center;
         background-color: #020202;
         z-index: 100;
-        
       }
-      #preloader div{
+      #preloader.container{
         text-align: center;
         position: relative;
         bottom: 6%;
@@ -45,7 +44,7 @@
       }
       .highlight{
         font-family: 'Amatic SC', cursive;
-        font-size: clamp(5.5rem,calc(5.5rem + 15vw), 15rem);
+        font-size: clamp(4rem,calc(3.5rem + 15vw), 12rem);
         color: rgb(0, 78, 247);
         text-shadow: 0 0 1rem rgb(26, 60, 250);
         position: relative; 
@@ -58,7 +57,7 @@
         position: absolute;
         top: 25%;
         right: 30%;
-        box-shadow: 4rem 4rem 10rem 2rem rgb(145, 145, 145);
+        box-shadow: 1rem 1rem 10rem 2rem rgb(145, 145, 145);
         filter: blur(1.5rem);
       }
       .highlight.flickering{
@@ -188,7 +187,7 @@
 
       .dim{
         font-family: sans-serif;
-        color: rgb(20, 20, 20);
+        color: rgb(27, 27, 27);
         font-size: clamp(2.5rem,calc(2.5rem + 7vw), 7rem);
       }
       .dim.flickering{
@@ -220,7 +219,7 @@
   </head>
   <body>
     <div id = "preloader">
-      <div>
+      <div class='container'>
         <div>
           <span class = "highlight flickering">H</span>
           <span class = "dim flickering">a</span>
@@ -242,14 +241,17 @@
   const preloader = document.querySelector('#preloader');
   const body = document.querySelector('body');
   window.addEventListener('load', ()=> {
-    preloaderSpan.forEach(element => {
-    element.classList.remove('flickering');
-    element.classList.add('end');
+    setTimeout(()=>{
+      preloaderSpan.forEach(element => {
+      element.classList.remove('flickering');
+      element.classList.add('end');
     });
     setTimeout(()=> {
       preloader.style.display = 'none';
       body.style.overflow = 'auto'
     },3000)
+    },2000)
+    
   });
 </script>
 </html>

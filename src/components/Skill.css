@@ -1,0 +1,71 @@
+#skill {
+  margin-top: 5rem;
+}
+
+#skill .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skill .display img {
+  opacity: 0.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(var(--mobileHeight)*15/100);
+  width: auto;
+}
+
+.turnOnLogo img:nth-child(7) {
+  -webkit-animation: turnOnYellow 0.1s 0.7s forwards;
+          animation: turnOnYellow 0.1s 0.7s forwards;
+}
+
+.turnOnLogo img:nth-child(6) {
+  -webkit-animation: turnOnYellow 0.1s 0.6s forwards;
+          animation: turnOnYellow 0.1s 0.6s forwards;
+}
+
+.turnOnLogo img:nth-child(5) {
+  -webkit-animation: turnOnYellow 0.1s 0.5s forwards;
+          animation: turnOnYellow 0.1s 0.5s forwards;
+}
+
+.turnOnLogo img:nth-child(4) {
+  -webkit-animation: turnOnYellow 0.1s 0.4s forwards;
+          animation: turnOnYellow 0.1s 0.4s forwards;
+}
+
+.turnOnLogo img:nth-child(3) {
+  -webkit-animation: turnOnYellow 0.1s 0.3s forwards;
+          animation: turnOnYellow 0.1s 0.3s forwards;
+}
+
+.turnOnLogo img:nth-child(2) {
+  -webkit-animation: turnOnYellow 0.1s 0.2s forwards;
+          animation: turnOnYellow 0.1s 0.2s forwards;
+}
+
+.turnOnLogo img:nth-child(1) {
+  -webkit-animation: turnOnYellow 0.1s 0.1s forwards;
+          animation: turnOnYellow 0.1s 0.1s forwards;
+}
+
+@media screen and (max-width: 770px) {
+  #skill .display {
+    width: 90%;
+  }
+  #skill .display img {
+    height: calc(var(--mobileHeight)*8/100);
+  }
+}
+/*# sourceMappingURL=Skill.css.map */

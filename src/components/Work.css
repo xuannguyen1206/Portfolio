@@ -1,0 +1,197 @@
+#work {
+  position: relative;
+}
+
+#work .arrow {
+  bottom: 45%;
+  font-size: 3rem;
+  position: absolute;
+  color: #d12d7f;
+  text-shadow: 0 0 1rem #ff0080;
+  cursor: pointer;
+}
+
+#work .leftArrow {
+  left: 1.5%;
+}
+
+#work .rightArrow {
+  right: 1.5%;
+}
+
+.carousel {
+  width: 100%;
+  height: calc(var(--mobileHeight)*70/100);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.carousel .container {
+  width: 75%;
+  height: 90%;
+  border-radius: 2%;
+  border: 3px solid #0f41e4;
+  -webkit-box-shadow: 0 0 0.5rem 0.5rem blue;
+          box-shadow: 0 0 0.5rem 0.5rem blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel .container .card-container {
+  width: 500%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.carousel .container .card-container .card {
+  width: 20%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr minmax(0, 7fr);
+      grid-template-rows: 3fr minmax(0, 7fr);
+}
+
+.carousel .container .card-container .card img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .container .card-container .card .des {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.carousel .container .card-container .card .des h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: neon;
+  text-align: center;
+  text-shadow: 0 0 1rem yellow;
+  color: #f5f850;
+  font-size: clamp(1.5rem, calc(0.8rem + 3vw), 5rem);
+}
+
+.carousel .container .card-container .card .des span {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-family: var(--paraFont);
+  font-size: 1rem;
+}
+
+.carousel .container .card-container .card .des p {
+  font-family: var(--paraFont);
+  font-size: clamp(1rem, calc(0.2rem + 2vw), 1.5rem);
+  height: 60%;
+  width: 90%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  scrollbar-width: none;
+}
+
+.carousel .container .card-container .card .des .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .container .card-container .card .des .buttons button {
+  padding: clamp(0.5rem, calc(0.2rem + 2vw), 0.8rem);
+  font-family: neon;
+  font-size: clamp(1rem, calc(0.2rem + 3vw), 2rem);
+  color: #faa01a;
+  background-color: #1f1f1f;
+  text-shadow: 0 0 0.2rem #ddac0c;
+}
+
+@media screen and (min-width: 770px) {
+  #work .arrow {
+    font-size: 7rem;
+  }
+  .carousel .container .card-container .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4.5fr 5.5fr;
+        grid-template-columns: 4.5fr 5.5fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .carousel .container .card-container .card img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1/1/2/2;
+  }
+  .carousel .container .card-container .card .des {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1/2/2/3;
+  }
+  .carousel .container .card-container .card .des p {
+    height: auto;
+    overflow-y: hidden;
+  }
+}
+/*# sourceMappingURL=Work.css.map */

@@ -1,21 +1,29 @@
 import './Navbar.scss'
-import hamburgerMenu from './hamburgerMenu.png'
-import { useRef } from 'react';
+import { useRef,useEffect } from 'react';
+
+let root = document.documentElement;
+
 
 function Navbar() {
   const nav = useRef(null);
   function mobileMenuActive(){
     nav.current.classList.toggle('mobile-active');
   }
+  useEffect(()=>{
+    root.style.setProperty('--mobileHeight',window.innerHeight + 'px');
+  })
+  window.addEventListener('resize', ()=>{
+    root.style.setProperty('--mobileHeight',window.innerHeight + 'px');
+  })
   return (
     <nav>
       <div className='nav-content' ref = {nav}>
         <a id ='home' href ='#'>HXN</a>
         <ul>
-          <li><a href='#'>Work</a></li>
-          <li><a href='#'>Skills</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Contact</a></li>
+          <li><a href='#work'>Work</a></li>
+          <li><a href='#skill'>Skills</a></li>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#contact'>Contact</a></li>
         </ul>
         <div className='hamburger'  onClick = {mobileMenuActive}>
           <div className = 'line num1'></div>
