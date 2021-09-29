@@ -66,7 +66,7 @@ function Work() {
               <article className='des'>
                 <h1>Weather App</h1>
                 <p>Enter a city name and you'll get everything you need to know about that place. Weather information, pictures , all in 1 website. Collecting data from 2 different resourceful API, this website will give you a brief status quo of almost all of the cities in the world. In mobile version, you can slide the picture instead of expanding it.</p>
-                <span>Vanilla JS + ES6, Html, Sass, Css </span>
+                <span>Vanilla JS + ES6, Html, Sass, Css, Eslint </span>
                 <div className ='buttons'>
                   <a href= 'https://github.com/xuannguyen1206/Weather-app' target="_blank">code</a>
                   <a href= 'https://xuannguyen1206.github.io/Weather-app/' target="_blank">live</a>
@@ -93,7 +93,7 @@ function Work() {
               </figure>
               <article className='des'>
                 <h1>Calculator</h1>
-                <p>A calculator that can retain your previous calculation for the next calculation and it can also say 'Hello'. A typical calculator you may think, and you're probably right</p>
+                <p>A perfect alternative to your regular old calculator we used to use back in highschool. But let not stop there, it can even say 'HELLO' and handle anything you enter.</p>
                 <span>React JS (Class components), Sass, Html, Css, Webpack, Eslint</span>
                 <div className ='buttons'>
                   <a href= 'https://github.com/xuannguyen1206/Calculator' target="_blank">code</a>
@@ -107,7 +107,7 @@ function Work() {
               </figure>
               <article className='des'>
                 <h1>Portfolio</h1>
-                <p>A combination of all the skill I have learnt and put in one place. The most responsive design and cleanest organization I have ever done. Trapping you in a neon maze but you can easily naviagte through using very noticable headlines. This portfolio will tell you everything you need to know about me as a developer.Enjoy!</p>
+                <p>A combination of all the skill I have learnt and put in one place. The most responsive design and cleanest organization I have ever done. Trapping users in a neon maze but you can easily naviagte through using very noticable headlines. This portfolio will tell you everything you need to know about me as a developer.Enjoy!</p>
                 <span>React JS (Hooks), Sass, Html, Css, Webpack, Eslint</span>
                 <div className ='buttons'>
                   <a href= '#' target="_blank">code</a>
