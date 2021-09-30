@@ -11,7 +11,7 @@ function Contact() {
           <img src = {githubImg} alt ='github'></img>
         </a>
         <span>0938213705</span>
-        <a href='https://mail.google.com/mail/u/2/#search/xuannguyenha02%40gmail.com' target = "_blank">xuannguyenha02@gmail.com</a>
+        <a href='https://mail.google.com/mail/u/1/#search/haxuannnguyenn%40gmail.com' target = "_blank">haxuannnguyenn@gmail.com</a>
       </div>
     </section>
   );

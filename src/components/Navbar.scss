@@ -28,7 +28,10 @@ nav{
           color: rgb(255, 251, 23);
           opacity: 0.2;
         }
-        @for $i from 4 through 1 {
+        #resume{
+          color: rgb(1, 250, 1);
+        }
+        @for $i from 5 through 1 {
           &:nth-child(#{$i}){
             a{
               animation: turnOnYellow 0.1s 0.1s*(5-$i) forwards;
