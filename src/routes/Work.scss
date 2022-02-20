@@ -1,7 +1,7 @@
 #work{
   position: relative;
   header{
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .arrow{
     bottom: 45%;
@@ -10,6 +10,7 @@
     color: rgb(209, 45, 127);
     text-shadow: 0 0 1rem rgb(255, 0, 128);
     cursor: pointer;
+    user-select: none;
   }
 
   .leftArrow{
@@ -21,14 +22,14 @@
 }
 .carousel{
   width: 100%;
-  height: calc(var(--mobileHeight)*90/100);
+  height: calc(var(--mobileHeight)*70/100);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   .container{
     width: 75%;
-    height: 90%;
+    height: 100%;
     border-radius: 2%;
     border: 3px solid rgb(15, 65, 228);
     box-shadow: 0 0 0.5rem 0.5rem blue;
@@ -46,8 +47,7 @@
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(0,3fr) minmax(0,7fr);
-
+        grid-template-rows: clamp(200px,170px + 100vw, 350px) 1fr;
         figure{
           grid-area: 1/1/2/2;
           display: flex;
@@ -82,9 +82,8 @@
           p{
             font-family: var(--paraFont);
             font-size: clamp(1rem, calc(0.2rem + 2vw), 1.5rem);
-            height:65%;
-            width: 90%;
-            margin: 0 auto;
+            text-align: center;
+            max-height: 210px;
             overflow-y: scroll;
             scrollbar-width: none;
           }
@@ -93,15 +92,41 @@
             justify-content: space-around;
             align-items : center;
             a{
-              padding: clamp(0.5rem, calc(0.2rem + 2vw),0.8rem);
+              padding: 1rem;
               font-family: neon;
               font-size: clamp(1rem, calc(0.2rem + 3vw), 2rem);
-              border: 3px solid #faa01a;
-              color: #faa01a;
-              background-color: rgb(31, 31, 31);
-              text-shadow: 0 0 0.2rem rgb(221, 172, 12);
+              color: #f39303;
+              position: relative;
+              overflow: hidden;
+              &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 15%;
+                height:20%;
+                border-bottom: 2px solid rgb(247, 183, 64);
+                border-right: 2px solid rgb(247, 183, 64);
+                
+              }
+              &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 15%;
+                height:20%;
+                border-top: 2px solid rgb(247, 183, 64);
+                border-left: 2px solid rgb(247, 183, 64);
+              }
               &:hover{
-                transform: scale(1.1);
+                animation: buttonGlow 0.1s 0.5s linear forwards;
+                &::after{
+                  animation: buttonStretching 0.5s linear forwards;
+                }
+                &::before{
+                  animation: buttonStretching 0.5s linear forwards;
+                }
               }
             }
           }
@@ -110,9 +135,27 @@
     }
   }
 }
+@keyframes buttonGlow {
+  100%{
+    color: black;
+    background-color: #faa01a;
+    box-shadow:  0 0 50px #faa01a;
+  }
+}
+@keyframes buttonStretching {
+  0%{
+    width: 15%;
+    height: 20%;
+  }
+  100%{
+    width: 100%;
+    height: 100%;
+  }
+}
 
 @media screen and (min-width: 770px) {
   #work{
+    
     .arrow{
       font-size: 7rem
     }

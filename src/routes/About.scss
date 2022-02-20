@@ -1,42 +1,40 @@
 #about{
-  .quoteContainer{
-    display: flex;
-    justify-content: flex-end;
-    .quote{
+
+  margin-top: 5rem;
+  .neonBox{
+    margin: auto;
+    margin-top: 0.5rem;
+    width: 80%; 
+    border: 10px solid orange;
+    animation: borderGradient 10s 3s linear infinite;
+    .longIntro{
+      font-family: var(--paraFont);
+      font-size: clamp(1rem, calc(0.2rem + 2vw),2rem);
       width: 80%;
-      justify-content: flex-end;
-      font-size: clamp(1rem, calc(0.1rem + 2.5vw), 4rem);
-      text-align: right;
-      opacity: 0;
+      margin: 2.5rem auto;
     }
   }
   
-  .longIntro{
-    font-family: var(--paraFont);
-    font-size: clamp(1rem, calc(0.2rem + 2vw),2rem);
-    width: 80%;
-    margin: 2rem auto;
-  }
 }
-
-.lightenUp{
-  animation: lighten 3s 1.5s forwards;
-}
-@keyframes lighten {
+@keyframes borderGradient {
   0%{
-    opacity: 0;
-    color: black;
-    text-shadow: none;
+    border:10px solid orange;
+    box-shadow: 0 0 50px rgb(245, 205, 131);
+  }
+  25%{
+    border:10px solid green;
+    box-shadow: 0 0 50px rgb(89, 245, 141);
   }
   50%{
-    opacity: 0.8;
-    color: #425df7;
-    text-shadow: none;
+    border:10px solid red;
+    box-shadow: 0 0 50px rgb(245, 115, 83);
+  }
+  75%{
+    border:10px solid blue;
+    box-shadow: 0 0 50px rgb(64, 91, 247);
   }
   100%{
-    opacity: 1;
-    color: #1a3cfa;
-    text-shadow: 0 0 0.3rem #368dff;
+    border:10px solid orange;
+    box-shadow: 0 0 50px rgb(245, 205, 131);
   }
-  
 }

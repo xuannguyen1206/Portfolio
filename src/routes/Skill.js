@@ -6,20 +6,26 @@ import sassImg from '../assets/skills/sass.png';
 import webpackImg from '../assets/skills/webpack.png';
 import reactImg from '../assets/skills/react.png';
 import eslintImg from '../assets/skills/eslint.png';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 
 function Skill() {
   const logoDisplay = useRef();
+  const title = useRef();
   function blinkLogo(){
     logoDisplay.current.classList.add('turnOnLogo')
   }
+
+  useEffect(()=> {
+    title.current.classList.add('turnOnHeader');
+  },[])
+
   return (
     <>
     <Navbar/>
     <section id='skill'>
-      <header className='sectionHeader neon' onAnimationEnd = {blinkLogo}>
-        <h1>Skill</h1>
+      <header  className='sectionHeader neon' onAnimationEnd = {blinkLogo}>
+        <h1 ref={title}>Skill</h1>
       </header>
       <div className='display' ref = {logoDisplay}>
         <img src = {htmlImg} alt = 'html'/>

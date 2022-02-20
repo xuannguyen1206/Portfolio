@@ -6,6 +6,7 @@
   font-family: 'neon';
   src: url('./assets/fonts/Neoneon.otf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 :root{
   --mobileHeight:0;
 }
@@ -37,7 +38,7 @@ html{
   scroll-behavior: smooth;
 }
 :root{
-  --paraFont: 'Courier New', Courier, monospace;
+  --paraFont: 'Manrope', sans-serif;
 }
 .neon{
   font-family: 'neon';
@@ -87,9 +88,10 @@ section{
     font-size: clamp(3.5rem,calc(2rem + 3vw), 6.5rem);
     color: rgb(209, 45, 127);
     opacity: 0.2;
+    user-select: none;
   }
   .turnOnHeader{
-    animation: turnOnHeader 1s 0s linear forwards;
+    animation: turnOnHeader 1s 1s linear forwards;
   }
 }
 

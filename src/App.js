@@ -4,9 +4,6 @@ import Navbar from './components/Navbar';
 import Introduction from './components/Introduction';
 const root = document.querySelector('#root');
 
-
-
-
 function App() {
   const headerTitle = useRef();
 

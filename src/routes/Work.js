@@ -1,15 +1,17 @@
 import './Work.scss';
-import { useRef } from 'react';
+import { useRef,useEffect } from 'react';
 import image1 from '../assets/work/1.png';
 import image2 from '../assets/work/2.png';
 import image3 from '../assets/work/3.png';
 import image4 from '../assets/work/4.png';
 import image5 from '../assets/work/5.png';
 import Navbar from '../components/Navbar';
+const root = document.querySelector('#root');
 function Work() {
   const slider = useRef();
   const container = useRef();
   const status = useRef('');
+  const title = useRef();
   function nextCard(){
     if(status.current === 'prev'){
       slider.current.prepend(slider.current.lastElementChild);
@@ -38,12 +40,18 @@ function Work() {
       slider.current.style.transition = 'all 0.5s linear';
     })
   }
+
+  useEffect(()=> {
+    title.current.classList.add('turnOnHeader');
+    root.style.display = 'block';
+  },[])
+
   return (
     <>
     <Navbar/>
     <section id = 'work'>
       <header className='sectionHeader neon'>
-        <h1>Projects</h1>
+        <h1 ref={title}>Projects</h1>
       </header>
       <div className='carousel'>
         <div className ='container' ref = {container}>

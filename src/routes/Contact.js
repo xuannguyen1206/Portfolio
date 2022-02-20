@@ -1,13 +1,22 @@
 import './Contact.scss';
 import githubImg from '../assets/contact/github.png'
 import Navbar from '../components/Navbar';
+import { useEffect, useRef } from 'react';
+const root = document.querySelector('#root');
 function Contact() {
+  const title = useRef();
+
+  useEffect(()=> {
+    root.style.display = 'block';
+    title.current.classList.add('turnOnHeader');
+  },[])
+
   return (
     <>
     <Navbar/>
     <section id='contact'>
       <header className='sectionHeader neon'>
-        <h1>CONTACT</h1>
+        <h1 ref={title}>CONTACT</h1>
       </header>
       <div class='contactLinkContainer'>
         <a href='https://github.com/xuannguyen1206?tab=repositories' target = "_blank">

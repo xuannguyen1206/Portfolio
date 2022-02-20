@@ -19,13 +19,13 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-content' ref = {nav}>
-        <a id ='home' href ='#'>HXN</a>
+        <Link id ='home' to ='/'>HXN</Link>
         <ul>
-          <Link to='/work'>Work</Link>
-          <Link to='/skills'>Skills</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
-          <a href='https://drive.google.com/file/d/1vI81ocprVhtfvdKN05NdW-w-1dhOkSVu/view?usp=sharing' target = '_blank' id ='resume'>Resume</a>
+          <li><Link to='/work'>Work</Link></li>
+          <li><Link to='/skills'>Skills</Link></li>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/contact'>Contact</Link></li>
+          <li><a href='https://drive.google.com/file/d/1vI81ocprVhtfvdKN05NdW-w-1dhOkSVu/view?usp=sharing' target = '_blank' id ='resume'>Resume</a></li>
         </ul>
         <div className='hamburger'  onClick = {mobileMenuActive}>
           <div className = 'line num1'></div>
