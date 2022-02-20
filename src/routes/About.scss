@@ -1,0 +1,42 @@
+#about{
+  .quoteContainer{
+    display: flex;
+    justify-content: flex-end;
+    .quote{
+      width: 80%;
+      justify-content: flex-end;
+      font-size: clamp(1rem, calc(0.1rem + 2.5vw), 4rem);
+      text-align: right;
+      opacity: 0;
+    }
+  }
+  
+  .longIntro{
+    font-family: var(--paraFont);
+    font-size: clamp(1rem, calc(0.2rem + 2vw),2rem);
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
+.lightenUp{
+  animation: lighten 3s 1.5s forwards;
+}
+@keyframes lighten {
+  0%{
+    opacity: 0;
+    color: black;
+    text-shadow: none;
+  }
+  50%{
+    opacity: 0.8;
+    color: #425df7;
+    text-shadow: none;
+  }
+  100%{
+    opacity: 1;
+    color: #1a3cfa;
+    text-shadow: 0 0 0.3rem #368dff;
+  }
+  
+}

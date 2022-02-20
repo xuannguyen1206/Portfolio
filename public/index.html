@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon"  sizes="500x500" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+      *{
+        margin:0;
+        padding: 0;
+      }
+      body{
+        overflow: hidden;
+      }
+      #root{
+        width: 100%;
+        position: relative;
+        display: none;
+      }
+      #preloader{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #020202;
+        z-index: 100;
+      }
+      #preloader.container{
+        text-align: center;
+        position: relative;
+        bottom: 6%;
+      }
+      #preloader span{
+        opacity: 0.15;
+      }
+      .highlight{
+        font-family: 'Amatic SC', cursive;
+        font-size: clamp(4rem,calc(3.5rem + 15vw), 12rem);
+        color: rgb(0, 78, 247);
+        text-shadow: 0 0 1rem rgb(26, 60, 250);
+        position: relative; 
+      }
+      .highlight::after{
+        content: '';
+        background-color: rgba(255,255,255,1);
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 30%;
+        box-shadow: 1rem 1rem 10rem 2rem rgb(145, 145, 145);
+        filter: blur(1.5rem);
+      }
+      .highlight.flickering{
+        animation: flickeringHighlight  3s linear infinite;
+      }
+      @keyframes flickeringHighlight {
+        0% {
+          opacity: 0.4;
+        }
+        5% {
+          opacity: 0.5;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        15% {
+          opacity: 0.85;
+        }
+        25% {
+          opacity: 0.5;
+        }
+        30% {
+          opacity: 1;
+        }
+        35% {
+          opacity: 0.1;
+        }
+        40% {
+          opacity: 0.25;
+        }
+        45% {
+          opacity: 0.5;
+        }
+        60% {
+          opacity: 1;
+        }
+        70% {
+          opacity: 0.85;
+        }
+        80% {
+          opacity: 0.4;
+        }
+        90% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes flickeringDim {
+        0%{
+          opacity: 0.02;
+        }
+        5% {
+          opacity: 0.09;
+        }
+        10% {
+          opacity: 0.12;
+        }
+        15% {
+          opacity: 0.19;
+        }
+        25% {
+          opacity: 0.09;
+        }
+        30% {
+          opacity: 0.2;
+        }
+        35% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.02;
+        }
+        45% {
+          opacity: 0.1;
+        }
+        60% {
+          opacity: 0.3;
+        }
+        70% {
+          opacity: 0.19;
+        }
+        80% {
+          opacity: 0.2;
+        }
+        90% {
+          opacity: 0.07;
+        }
+        100% {
+          opacity: 0.15;
+
+        }
+      }
+      .highlight.end{
+        animation: endHigh 3s linear forwards;
+      }
+      @keyframes endHigh {
+        0%{
+          opacity: 0.4;
+        }
+        10%{
+          opacity: 0.8;
+        }
+        20%{
+          opacity: 0.45;
+        }
+        25%{
+          opacity: 0.5;
+        }
+        30%{
+          opacity: 0.55;
+        }
+        40%{
+          opacity: 0.8;
+        }
+        75%{
+          opacity: 1;
+        }
+        99%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+
+      .dim{
+        font-family: sans-serif;
+        color: rgb(27, 27, 27);
+        font-size: clamp(2.5rem,calc(2.5rem + 7vw), 7rem);
+      }
+      .dim.flickering{
+        animation: flickeringDim 2s linear infinite;
+      }
+
+      .dim.end{
+        animation: endDim 3s linear forwards;
+      }
+      @keyframes endDim {
+        0%{
+          opacity: 0.05;
+        }
+        10%{
+          opacity: 0.25;
+        }
+        20%{
+          opacity: 0.1;
+        }
+        25%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+    </style>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id = "preloader">
+      <div class='container'>
+        <div>
+          <span class = "highlight flickering">H</span>
+          <span class = "dim flickering">a</span>
+        </div>
+        <div>
+          <span class = "highlight flickering"> X</span>
+          <span class = "dim flickering">uan</span>
+        </div>
+        <div>
+          <span class = "highlight flickering"> N</span>
+          <span class = "dim flickering">guyen</span>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>   
+</body>
+<script>
+  const preloaderSpan = Array.from(document.querySelectorAll('#preloader span'));
+  const preloader = document.querySelector('#preloader');
+  const body = document.querySelector('body');
+  window.addEventListener('load', ()=> {
+    setTimeout(()=>{
+      preloaderSpan.forEach(element => {
+      element.classList.remove('flickering');
+      element.classList.add('end');
+    });
+    setTimeout(()=> {
+      preloader.style.display = 'none';
+      body.style.overflow = 'auto'
+    },3000)
+    },2000)
+    
+  });
+</script>
+</html>
