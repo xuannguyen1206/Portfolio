@@ -17,7 +17,7 @@
 }
 .turnOnLogo{
   img{
-    @for $i from 7 through 1 {
+    @for $i from 10 through 1 {
       &:nth-child(#{$i}){
         animation: turnOnYellow 0.1s 0.1s*($i) forwards;
       }

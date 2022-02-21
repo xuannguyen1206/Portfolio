@@ -6,6 +6,9 @@ import sassImg from '../assets/skills/sass.png';
 import webpackImg from '../assets/skills/webpack.png';
 import reactImg from '../assets/skills/react.png';
 import eslintImg from '../assets/skills/eslint.png';
+import nextImg from '../assets/skills/next.png';
+import tailwindImg from '../assets/skills/tailwind.png';
+import nodeJsImg from '../assets/skills/nodejs.png'
 import { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 
@@ -25,7 +28,7 @@ function Skill() {
     <Navbar/>
     <section id='skill'>
       <header  className='sectionHeader neon' onAnimationEnd = {blinkLogo}>
-        <h1 ref={title}>Skill</h1>
+        <h1 ref={title}>Skills</h1>
       </header>
       <div className='display' ref = {logoDisplay}>
         <img src = {htmlImg} alt = 'html'/>
@@ -35,7 +38,9 @@ function Skill() {
         <img src = {reactImg} alt = 'react'/>
         <img src = {webpackImg} alt = 'webpack'/>
         <img src = {eslintImg} alt = 'css'/>
-
+        <img src= {nextImg} alt ='nextjs'/>
+        <img src= {tailwindImg} alt ='tailwind'/>
+        <img src= {nodeJsImg} alt ='nodeJS'/>
       </div>
     </section>
     </>

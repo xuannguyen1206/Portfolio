@@ -6,7 +6,7 @@
     margin-top: 0.5rem;
     width: 80%; 
     border: 10px solid orange;
-    animation: borderGradient 10s 3s linear infinite;
+    animation: borderGradient 10s 2.5s linear infinite;
     .longIntro{
       font-family: var(--paraFont);
       font-size: clamp(1rem, calc(0.2rem + 2vw),2rem);

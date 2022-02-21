@@ -5,6 +5,7 @@ import image2 from '../assets/work/2.png';
 import image3 from '../assets/work/3.png';
 import image4 from '../assets/work/4.png';
 import image5 from '../assets/work/5.png';
+import image6 from '../assets/work/6.png'
 import Navbar from '../components/Navbar';
 const root = document.querySelector('#root');
 function Work() {
@@ -57,22 +58,36 @@ function Work() {
         <div className ='container' ref = {container}>
           <div ref={slider} onTransitionEnd={resetSlide} className ='card-container'>
             <div className = 'card'>
-              <figure>
-                <img alt ='etch a sketch' src= {image1}></img>
-              </figure>
-              <article className='des'>
-                <h1>Etch a sketch</h1>
-                <p>Let yuor imaginations run freely on a canvas. Using powerful mathematical algorithm to change the theme colors of the webpage to make your drawing even more noticable and stand out even more.</p>
-                <span>Vanilla JS, Sass, Html, Css</span>
-                <div className ='buttons'>
-                  <a href= 'https://github.com/xuannguyen1206/Etch-a-Sketch'>code</a>
-                  <a href= 'https://xuannguyen1206.github.io/Etch-a-Sketch/' target="_blank">live</a>
-                </div>
-              </article>
+                <figure>
+                  <img alt ='etch a sketch' src= {image1}></img>
+                </figure>
+                <article className='des'>
+                  <h1>Pomodoro</h1>
+                  <p>Simple pomodoro timer with complex color scraped from <a href='colohttps://colorhunt.co/'>colorhunt.co</a>.</p>
+                  <span>React JS (Hooks), Sass, Html, Css, Webpack</span>
+                  <div className ='buttons'>
+                    <a href= 'https://github.com/xuannguyen1206/Pomodoro' target="_blank" >code</a>
+                    <a href= 'https://pomodoro-kohl.vercel.app/' target="_blank">live</a>
+                  </div>
+                </article>
+            </div>
+            <div className = 'card'>
+                <figure>
+                  <img alt ='etch a sketch' src= {image2}></img>
+                </figure>
+                <article className='des'>
+                  <h1>Hangman</h1>
+                  <p>Testing your knowledgeable vocabulary. Don't make too many mistakes or you'll break the poor guy's neck. If you're lucky enough, maybe his smile is the last thing you remember about him.</p>
+                  <span>React JS (Hooks), Sass, Html, Css, Webpack</span>
+                  <div className ='buttons'>
+                    <a href= 'https://github.com/xuannguyen1206/Hangman' target="_blank" >code</a>
+                    <a href= 'https://xuannguyen1206.github.io/Hangman/' target="_blank">live</a>
+                  </div>
+                </article>
             </div>
             <div className = 'card'>
               <figure>
-                <img alt ='etch a sketch' src= {image2}></img>
+                <img alt ='etch a sketch' src= {image3}></img>
               </figure>
               <article className='des'>
                 <h1>Weather App</h1>
@@ -81,20 +96,6 @@ function Work() {
                 <div className ='buttons'>
                   <a href= 'https://github.com/xuannguyen1206/Weather-app' target="_blank">code</a>
                   <a href= 'https://xuannguyen1206.github.io/Weather-app/' target="_blank">live</a>
-                </div>
-              </article>
-            </div>
-            <div className = 'card'>
-              <figure>
-                <img alt ='etch a sketch' src= {image3}></img>
-              </figure>
-              <article className='des'>
-                <h1>Hangman</h1>
-                <p>Testing your knowledgeable vocabulary. Don't make too many mistakes or you'll break the poor guy's neck. If you're lucky enough, maybe his smile is the last thing you remember about him.</p>
-                <span>React JS (Hooks), Sass, Html, Css, Webpack</span>
-                <div className ='buttons'>
-                  <a href= 'https://github.com/xuannguyen1206/Hangman' target="_blank" >code</a>
-                  <a href= 'https://xuannguyen1206.github.io/Hangman/' target="_blank">live</a>
                 </div>
               </article>
             </div>
@@ -117,8 +118,22 @@ function Work() {
                 <img alt ='etch a sketch' src= {image5}></img>
               </figure>
               <article className='des'>
+                <h1>Etch a sketch</h1>
+                <p>Let your imaginations run freely on a canvas. Using powerful mathematical algorithm to change the theme colors of the webpage to make your drawing even more noticable and stand out even more.</p>
+                <span>Vanilla JS, Sass, Html, Css</span>
+                <div className ='buttons'>
+                  <a href= 'https://github.com/xuannguyen1206/Etch-a-Sketch'target="_blank">code</a>
+                  <a href= 'https://xuannguyen1206.github.io/Etch-a-Sketch/' target="_blank">live</a>
+                </div>
+              </article>
+            </div>          
+            <div className = 'card'>
+              <figure>
+                <img alt ='etch a sketch' src= {image6}></img>
+              </figure>
+              <article className='des'>
                 <h1>Portfolio</h1>
-                <p>A combination of all the skill I have learnt and put in one place. The most responsive design and cleanest organization I have ever done. Trapping users in a neon maze but you can easily naviagte through using very noticable headlines. This portfolio will tell you everything you need to know about me as a developer.Enjoy!</p>
+                <p>A summarization of all projects I've done so far.</p>
                 <span>React JS (Hooks), Sass, Html, Css, Webpack, Eslint</span>
                 <div className ='buttons'>
                   <a href= '#' target="_blank">code</a>
