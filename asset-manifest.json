@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a9e38bd7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c46dc20b.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c46dc20b.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.16b219ff.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.16b219ff.js.map",
+    "static/js/2.6e11881e.chunk.js": "/Portfolio/static/js/2.6e11881e.chunk.js",
+    "static/js/2.6e11881e.chunk.js.map": "/Portfolio/static/js/2.6e11881e.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.a9e38bd7.chunk.css.map": "/Portfolio/static/css/main.a9e38bd7.chunk.css.map",
+    "static/js/2.6e11881e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.6e11881e.chunk.js.LICENSE.txt",
+    "static/media/1.91a461c1.png": "/Portfolio/static/media/1.91a461c1.png",
+    "static/media/2.4b46213f.png": "/Portfolio/static/media/2.4b46213f.png",
+    "static/media/3.b6324dd3.png": "/Portfolio/static/media/3.b6324dd3.png",
+    "static/media/4.6646054b.png": "/Portfolio/static/media/4.6646054b.png",
+    "static/media/5.c889cc33.png": "/Portfolio/static/media/5.c889cc33.png",
+    "static/media/6.2291d94c.png": "/Portfolio/static/media/6.2291d94c.png",
+    "static/media/App.scss": "/Portfolio/static/media/Neoneon.0e8458da.otf",
+    "static/media/css.a3170a64.png": "/Portfolio/static/media/css.a3170a64.png",
+    "static/media/eslint.27ed77f1.png": "/Portfolio/static/media/eslint.27ed77f1.png",
+    "static/media/html.921c9b2d.png": "/Portfolio/static/media/html.921c9b2d.png",
+    "static/media/js.71a66432.png": "/Portfolio/static/media/js.71a66432.png",
+    "static/media/nodejs.fb5a3b4a.png": "/Portfolio/static/media/nodejs.fb5a3b4a.png",
+    "static/media/react.81f4ccc5.png": "/Portfolio/static/media/react.81f4ccc5.png",
+    "static/media/sass.fa8b11a0.png": "/Portfolio/static/media/sass.fa8b11a0.png",
+    "static/media/tailwind.0f80a180.png": "/Portfolio/static/media/tailwind.0f80a180.png",
+    "static/media/webpack.49a9bec2.png": "/Portfolio/static/media/webpack.49a9bec2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16b219ff.js",
+    "static/js/2.6e11881e.chunk.js",
+    "static/css/main.a9e38bd7.chunk.css",
+    "static/js/main.c46dc20b.chunk.js"
+  ]
+}
