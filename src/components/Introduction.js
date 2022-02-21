@@ -110,7 +110,7 @@ function Introduction() {
       </div>
       <div id='explore'>
         <div className='innerExplore'>
-          <Link to='/work'>EXPLORE</Link>
+          <Link to='/Portfolio/work'>EXPLORE</Link>
         </div>
       </div>
       

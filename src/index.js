@@ -12,11 +12,11 @@ import Contact from './routes/Contact';
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App/>}/>
-      <Route path='/work' element= {<Work/>}/>
-      <Route path='/skills' element={<Skill/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/Portfolio' element={<App/>}/>
+      <Route path='/Portfolio/work' element= {<Work/>}/>
+      <Route path='/Portfolio/skills' element={<Skill/>}/>
+      <Route path='/Portfolio/about' element={<About/>}/>
+      <Route path='/Portfolio/contact' element={<Contact/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
