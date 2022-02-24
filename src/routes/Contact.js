@@ -15,16 +15,19 @@ function Contact() {
     <>
     <Navbar/>
     <section id='contact'>
-      <header className='sectionHeader neon'>
-        <h1 ref={title}>CONTACT</h1>
-      </header>
-      <div class='contactLinkContainer'>
-        <a href='https://github.com/xuannguyen1206?tab=repositories' target = "_blank">
-          <img src = {githubImg} alt ='github'></img>
-        </a>
-        <span>0938213705</span>
-        <a href='https://mail.google.com/mail/u/1/#search/haxuannnguyenn%40gmail.com' target = "_blank">haxuannnguyenn@gmail.com</a>
+      <div>
+        <header className='sectionHeader neon'>
+          <h1 ref={title}>CONTACT</h1>
+        </header>
+        <div class='contactLinkContainer'>
+          <a href='https://github.com/xuannguyen1206?tab=repositories' target = "_blank">
+            <img src = {githubImg} alt ='github'></img>
+          </a>
+          <span>0938213705</span>
+          <a href='https://mail.google.com/mail/u/1/#search/haxuannnguyenn%40gmail.com' target = "_blank">haxuannnguyenn@gmail.com</a>
+        </div>
       </div>
+
     </section>
     </>
   );

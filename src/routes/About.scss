@@ -1,9 +1,15 @@
 #about{
 
-  margin-top: 5rem;
+  height: calc(var(--mobileHeight)*90/100);  
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .sectionHeader{
+    margin-top: 0;
+  }
   .neonBox{
     margin: auto;
-    margin-top: 0.5rem;
     width: 80%; 
     border: 10px solid orange;
     animation: borderGradient 10s 2.5s linear infinite;

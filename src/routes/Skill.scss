@@ -1,5 +1,9 @@
 #skill{
-  margin-top: 5rem;
+  height: calc(var(--mobileHeight)*90/100);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
   .display{
     display: flex;
     margin: auto;
@@ -17,7 +21,7 @@
 }
 .turnOnLogo{
   img{
-    @for $i from 10 through 1 {
+    @for $i from 12 through 1 {
       &:nth-child(#{$i}){
         animation: turnOnYellow 0.1s 0.1s*($i) forwards;
       }

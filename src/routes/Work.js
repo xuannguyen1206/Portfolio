@@ -64,7 +64,7 @@ function Work() {
                 <article className='des'>
                   <h1>Pomodoro</h1>
                   <p>Simple pomodoro timer with complex color scraped from <a href='colohttps://colorhunt.co/'>colorhunt.co</a>.</p>
-                  <span>React JS (Hooks), Sass, Html, Css, Webpack</span>
+                  <span>NextJs, Tailwind, NodeJS</span>
                   <div className ='buttons'>
                     <a href= 'https://github.com/xuannguyen1206/Pomodoro' target="_blank" >code</a>
                     <a href= 'https://pomodoro-kohl.vercel.app/' target="_blank">live</a>
@@ -77,7 +77,7 @@ function Work() {
                 </figure>
                 <article className='des'>
                   <h1>Hangman</h1>
-                  <p>Testing your knowledgeable vocabulary. Don't make too many mistakes or you'll break the poor guy's neck. If you're lucky enough, maybe his smile is the last thing you remember about him.</p>
+                  <p>Testing your knowledgeable vocabulary with infinite words to guess</p>
                   <span>React JS (Hooks), Sass, Html, Css, Webpack</span>
                   <div className ='buttons'>
                     <a href= 'https://github.com/xuannguyen1206/Hangman' target="_blank" >code</a>
@@ -91,7 +91,7 @@ function Work() {
               </figure>
               <article className='des'>
                 <h1>Weather App</h1>
-                <p>Enter a city name and you'll get everything you need to know about that place. Weather information, pictures , all in 1 website. Collecting data from 2 different resourceful API, this website will give you a brief status quo of almost all of the cities in the world. In mobile version, you can slide the picture instead of expanding it.</p>
+                <p>Enter a city name and you'll get a brief look of almost all of the cities in the world. In mobile version, slide the pictures to view more.</p>
                 <span>Vanilla JS + ES6, Html, Sass, Css, Eslint </span>
                 <div className ='buttons'>
                   <a href= 'https://github.com/xuannguyen1206/Weather-app' target="_blank">code</a>
@@ -105,7 +105,7 @@ function Work() {
               </figure>
               <article className='des'>
                 <h1>Calculator</h1>
-                <p>A perfect alternative to your regular old calculator we used to use back in highschool. But let not stop there, it can even say 'HELLO' and handle anything you enter.</p>
+                <p>A perfect alternative to your regular old calculator we used to use back in highschool.</p>
                 <span>React JS (Class components), Sass, Html, Css, Webpack, Eslint</span>
                 <div className ='buttons'>
                   <a href= 'https://github.com/xuannguyen1206/Calculator' target="_blank">code</a>
@@ -119,7 +119,7 @@ function Work() {
               </figure>
               <article className='des'>
                 <h1>Etch a sketch</h1>
-                <p>Let your imaginations run freely on a canvas. Using powerful mathematical algorithm to change the theme colors of the webpage to make your drawing even more noticable and stand out even more.</p>
+                <p>A canvas that change adapt to your color choice to make your drawing more beautiful</p>
                 <span>Vanilla JS, Sass, Html, Css</span>
                 <div className ='buttons'>
                   <a href= 'https://github.com/xuannguyen1206/Etch-a-Sketch'target="_blank">code</a>

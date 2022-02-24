@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <nav>
       <div className='nav-content' ref = {nav}>
-        <Link id ='home' to ='/'>HXN</Link>
+        <Link id ='home' to ='/Portfolio/'>HXN</Link>
         <ul>
           <li><Link to='/Portfolio/work'>Work</Link></li>
           <li><Link to='/Portfolio/skills'>Skills</Link></li>

@@ -1,7 +1,14 @@
 #work{
+  height: calc(var(--mobileHeight)*90/100);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   header{
     margin-top: 3rem;
+    h1{
+      font-size: 3rem;
+    }
   }
   .arrow{
     bottom: 45%;
@@ -47,7 +54,7 @@
         height: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: clamp(200px,170px + 100vw, 350px) 1fr;
+        grid-template-rows: 150px 1fr;
         figure{
           grid-area: 1/1/2/2;
           display: flex;
@@ -152,9 +159,24 @@
     height: 100%;
   }
 }
-
+@media screen and (max-width:550px){
+  #work{
+    position: relative;
+    header{
+      margin-top: 0.25rem;
+      h1{
+        font-size: 3rem;
+      }
+    }
+  }
+}
 @media screen and (min-width: 770px) {
   #work{
+    header{
+      h1{
+        font-size: 5rem;
+      }
+    }
     .arrow{
       font-size: 7rem
     }
