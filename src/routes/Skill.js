@@ -11,6 +11,8 @@ import tailwindImg from '../assets/skills/tailwind.png';
 import nodeJsImg from '../assets/skills/nodejs.png';
 import mysqlImg from '../assets/skills/mysql.png';
 import tsImg from '../assets/skills/ts.png';
+import graphql from '../assets/skills/graphql.png';
+import apollo from '../assets/skills/apollo.png';
 import { useEffect, useRef } from 'react';
 import Navbar from '../components/Navbar';
 const root = document.querySelector('#root');
@@ -42,14 +44,16 @@ function Skill() {
           <img src = {cssImg} alt = 'css'/>
           <img src = {jsImg} alt = 'javascript'/>
           <img src = {tsImg} alt = 'typescript'/>
-          <img src = {sassImg} alt = 'sass'/>
-          <img src = {reactImg} alt = 'react'/>
-          <img src = {webpackImg} alt = 'webpack'/>
-          <img src = {eslintImg} alt = 'css'/>
-          <img src= {nextImg} alt ='nextjs'/>
-          <img src= {tailwindImg} alt ='tailwind'/>
           <img src= {nodeJsImg} alt ='nodeJS'/>
+          <img src = {graphql} alt = 'graphql'/>
+          <img src = {sassImg} alt = 'sass'/>
+          <img src = {reactImg} alt = 'react'/>       
+          <img src= {nextImg} alt ='nextjs'/>
+          <img src = {apollo} alt = 'apollo'/>       
+          <img src= {tailwindImg} alt ='tailwind'/>
           <img src= {mysqlImg} alt = 'mysql'/>
+          <img src = {webpackImg} alt = 'webpack'/>
+          <img src = {eslintImg} alt = 'eslint'/>
         </div>
       </div>
 

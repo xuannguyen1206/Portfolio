@@ -1,5 +1,6 @@
 import './Work.scss';
 import { useRef,useEffect } from 'react';
+import travelWorld from '../assets/work/travelWorld.png';
 import image1 from '../assets/work/1.png';
 import image2 from '../assets/work/2.png';
 import image3 from '../assets/work/3.png';
@@ -59,11 +60,25 @@ function Work() {
           <div ref={slider} onTransitionEnd={resetSlide} className ='card-container'>
             <div className = 'card'>
                 <figure>
-                  <img alt ='etch a sketch' src= {image1}></img>
+                  <img alt ='TravelWOrld' src= {travelWorld}></img>
+                </figure>
+                <article className='des'>
+                  <h1>TravelWOrld</h1>
+                  <p>A website that show how magical the world is. </p>
+                  <span>NextJs, Tailwind, NodeJS</span>
+                  <div className ='buttons'>
+                    <a href= 'https://github.com/xuannguyen1206/travelWorld' target="_blank" >code</a>
+                    <a href= 'https://travel-world-nine.vercel.app/' target="_blank">live</a>
+                  </div>
+                </article>
+            </div>
+            <div className = 'card'>
+                <figure>
+                  <img alt ='pomodoro' src= {image1}></img>
                 </figure>
                 <article className='des'>
                   <h1>Pomodoro</h1>
-                  <p>Simple pomodoro timer with complex color scraped from <a href='colohttps://colorhunt.co/'>colorhunt.co</a>.</p>
+                  <p>Simple pomodoro timer with complex color scraped from <a href='https://colorhunt.co/' style={{color: 'orange'}}>colorhunt.co</a>.</p>
                   <span>NextJs, Tailwind, NodeJS</span>
                   <div className ='buttons'>
                     <a href= 'https://github.com/xuannguyen1206/Pomodoro' target="_blank" >code</a>
